@@ -104,7 +104,7 @@
 
 
     <footer>
-        <h2>Desarrollado por Abraham Lira</h2>
+        <h2>Desarrollado por Franco Román</h2>
     </footer>
 
 </body>
