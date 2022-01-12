@@ -12,7 +12,12 @@
     <h1>El resultado de la búsqueda es</h1>
 
     <?php
-
+        
+        /* 
+            Cada índice de la matriz guarda una bacteria. Cada sub-array contiene en su primer índice el nombre de la bacteria y en el resto de los índices contiene
+            las pruebas correspondientes
+        */
+    
         $bacterias = array(
             array("B. Anthracis", "catalasa+", "oxidasa+", "manitol-", "glucosa+", "sacarosa+", "esporasSi", "inmovilidad", "capsulaSi"), 
             array("S. Aureus", "gram+", "catalasa+", "oxidasa+", "manitol+","coagulasa+", "glucosa+", "sacarosa+", "anaerobio", "esporasNo", "inmovilidad"),
