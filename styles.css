@@ -1,0 +1,49 @@
+/***************************************************************
+IMPORTANTE: ESTE ARCHIVO MODIFICA LOS ARCHIVOS
+
+    - index.php
+    - resultado.php
+
+USAR CON CUIDADO
+(usar id, clases o crear un archivo css para cada archivo xD)
+***************************************************************/
+body{
+    background-color: cadetblue;
+}
+
+h1{
+    font-size: 40px;
+}
+
+label{/* Hace que se muestren uno a bajo del otro las pruebas en el index.php*/
+    font-size: 25px;
+    display: block;;
+    margin-bottom: 10px;
+}
+
+p{/* Con esto controlamos los parrafos del archivo resultado.php*/
+    font-size: 24px;
+    margin: 0px;
+}
+
+#pSeleccion{
+    margin-bottom: 15px;
+}
+
+li{
+    font-size: 20px;
+}
+
+#buscar{/*El boton de buscar*/
+    font-size: 20px;
+}
+
+h2{
+    color: black;
+    font-style: italic;
+    font-size: 30px;
+}
+
+h2:hover{
+    color: white;
+}
