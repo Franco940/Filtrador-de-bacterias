@@ -52,13 +52,20 @@
 
         if(isset($_POST['submit'])){ //Para ejecutar PHP script en Submit
             if(!empty($_POST['prueba'])){
-                // Bucle para almacenar y mostrar los valores de la casilla de verificación comprobación individual.
+                // Bucle para almacenar las pruebas que se seleccionaron
                 foreach($_POST['prueba'] as $selected){
                     array_push($pruebas, $selected);
                 }
             }
         }
 
+    
+        /*
+            En esta serie de blucles se comparan las pruebas seleccionadas con cada indice de la matriz "$bacterias"
+
+            Si se encuentra 1 o más coincidencias se guarda en el array "$resultado", el cual guarda las bacterias que coindicen con alguna
+            prueba seleccionada
+        */
         for($i = 0; $i < count($bacterias); $i++){
             for($j = 1; $j < count($bacterias[$i]); $j++){
                 
@@ -92,6 +99,7 @@
         <p>Bacterias:</p>
         <ul>
         <?php
+            // Se muestran todas las bacterias que tuvieron coincidencia con las pruebas seleccionadas
             if(!empty($resultado)){
                 foreach($resultado as $r){
                     echo "<li>". $r . "</li>";
